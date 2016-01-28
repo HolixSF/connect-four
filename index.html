@@ -2,72 +2,119 @@
 <head>
   <title>Connect Four</title>
   <link rel="stylesheet" type="text/css" href="application.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <table id='connect-four-table'>
-    <tr>
-      <td class='submit-cell'></td>
-      <td class='submit-cell'></td>
-      <td class='submit-cell'></td>
-      <td class='submit-cell'></td>
-      <td class='submit-cell'></td>
-      <td class='submit-cell'></td>
-      <td class='submit-cell'></td>
-    </tr>
-    <tr>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-    </tr>
-    <tr>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-    </tr>
-    <tr>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-    </tr>
-    <tr>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-    </tr>
-    <tr>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-    </tr>
-    <tr>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-      <td class='checker-cell'></td>
-    </tr>
-  </table>
+  <header class='row col-md-6 col-md-offset-3'>
+    <h1 id='main-title'>CONNECT FOUR</h1>
+    <nav>
+    </nav>
+  </header>
+  <div class='row col-md-6 col-md-offset-3 game-container'>
+    <table id='connect-four-table'>
+      <tr id='submit-cell-row'>
+        <td class='submit-cell'>
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-triangle-bottom">
+          </button>
+        </td>
+        <td class='submit-cell'>
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-triangle-bottom">
+          </button>
+        </td>
+        <td class='submit-cell'>
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-triangle-bottom">
+          </button>
+        </td>
+        <td class='submit-cell'>
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-triangle-bottom">
+          </button>
+        </td>
+        <td class='submit-cell'>
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-triangle-bottom">
+          </button>
+        </td>
+        <td class='submit-cell'>
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-triangle-bottom">
+          </button>
+        </td>
+        <td class='submit-cell'>
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-triangle-bottom">
+          </button>
+        </td>
+      </tr>
+      <tr class='checker-cell-row'>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+      </tr>
+      <tr class='checker-cell-row'>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+      </tr>
+      <tr class='checker-cell-row'>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+      </tr>
+      <tr class='checker-cell-row'>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+      </tr>
+      <tr class='checker-cell-row'>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+      </tr>
+      <tr class='checker-cell-row'>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'></td>
+        <td class='checker-cell'>
+          <svg height="100" width="100">
+            <circle cx="50" cy="50" r="40" fill="#404040" />
+          </svg>
+        </td>
+        <td class='checker-cell'>
+          <svg height="100" width="100">
+            <circle cx="50" cy="50" r="40" fill="#ff4040" />
+          </svg>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <footer>
+  </footer>
 </body>
 </html>

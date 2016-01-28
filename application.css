@@ -1,8 +1,34 @@
 #connect-four-table {
   background-color: #eee;
 }
+h1#main-title {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 6em;
+  font-weight: 100;
+}
+tr#submit-cell-row {
+  background-color: #fff;
+}
+tr.checker-cell-row {
+  border-bottom: 1px solid #ddd;
+}
 td {
   width: 100px;
   height: 100px;
+}
+td.submit-cell {
+  text-align: center;
+}
+td.checker-cell {
   border-left: 1px solid #ddd;
 }
+
+/*
+
+$('.button').on('click', function() {
+  $('.red').css('display', 'initial');
+  $('.red').toggleClass('.black');
+  })
+*/

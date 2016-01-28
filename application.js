@@ -1,3 +1,5 @@
+var turn = 0;
+
 $(document).ready(function () {
   $('button').on('click', function(e){
     e.preventDefault;
@@ -18,20 +20,17 @@ $(document).ready(function () {
         var checkCell = table.rows[i].cells[col];
         var $checkCell = $(checkCell);
         if (!$checkCell.html()) {
-          $checkCell.html('<svg height="100" width="100"> <circle cx="50" cy="50" r="40" fill="#ff4040" /> </svg>');
+          if (turn%2==0){
+            $checkCell.html('<svg height="100" width="100"> <circle cx="50" cy="50" r="40" fill="#ff4040" /> </svg>');
+          } else {
+            $checkCell.html('<svg height="100" width="100"> <circle cx="50" cy="50" r="40" fill="#404040" /> </svg>');
+          }
+          turn++;
           break ;
         }
       }
     };
 
-
-
-    // If clicked column is full, then button should no longer be
-    // clickable.
-    // If clicked column is not full, find cell in that column with
-    // the largest index that has no background color, and update
-    // the background color.
-
-
   });
+
 });

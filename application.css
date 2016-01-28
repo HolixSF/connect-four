@@ -1,0 +1,8 @@
+#connect-four-table {
+  background-color: #eee;
+}
+td {
+  width: 100px;
+  height: 100px;
+  border-left: 1px solid #ddd;
+}

@@ -37,7 +37,7 @@ a:link {
   text-decoration: none;
 }
 a:hover {
-  color: #ff4040;
+  color: #000;
   text-decoration: none;
 }
 a:visited {
@@ -45,7 +45,21 @@ a:visited {
  text-decoration: none;
 }
 .button-container {
+  display: relative;
   margin-top: 100px;
+}
+.glyphicon-play {
+  display: absolute;
+  left: -50px;
+}
+.name-container {
+  padding-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-weight: 100;
+}
+span:hover {
+    color:#ff4040;
 }
 /*
 

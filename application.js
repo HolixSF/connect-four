@@ -23,6 +23,7 @@ var bindListeners = function(){
 var displayBoardGame = function(e){
   e.preventDefault;
   $('.button-container').remove();
+  $('.name-container').remove();
   $('#connect-four-table').show();
 }
 

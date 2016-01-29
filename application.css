@@ -1,9 +1,14 @@
 #connect-four-table {
+  display: none;
   background-color: #eee;
+  margin: 0 auto;
 }
 h1#main-title {
+  margin: 0 auto;
+  max-width: 700px;
   text-align: center;
-  padding: 20px;
+  padding: 60px 0px 30px 0px;
+
   font-family: 'Roboto', sans-serif;
   font-size: 6em;
   font-weight: 100;
@@ -24,7 +29,24 @@ td.submit-cell {
 td.checker-cell {
   border-left: 1px solid #ddd;
 }
-
+.glyphicon.glyphicon-play {
+  font-size: 200px;
+}
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff4040;
+  text-decoration: none;
+}
+a:visited {
+ color: #000;
+ text-decoration: none;
+}
+.button-container {
+  margin-top: 100px;
+}
 /*
 
 $('.button').on('click', function() {
